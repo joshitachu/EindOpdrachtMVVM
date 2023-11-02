@@ -1,0 +1,31 @@
+﻿<UserControl x:Class="MuziekApplicatieMVVM.Views.Album"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MuziekApplicatieMVVM.Views"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <!-- Album Details -->
+            <Label Content="Album Title:" />
+            <TextBox Name="TitleTextBox" Width="300" />
+
+            <Label Content="Release Year:" />
+            <TextBox Name="ReleaseYearTextBox" Width="300" />
+
+            <Label Content="Album Image (optional):" />
+            <Button Name="UploadImageButton" Content="Upload Image"  />
+
+            <!-- Song Details -->
+            <Label Content="Add Songs to Album:" />
+            <DataGrid Name="SongsDataGrid" Width="400" Height="150" AutoGenerateColumns="True" />
+
+            <Button Content="Add Song"  />
+
+            <!-- Action Buttons -->
+            <Button Content="Create Album"  />
+        </StackPanel>
+    </Grid>
+</UserControl>
